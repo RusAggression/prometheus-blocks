@@ -1,0 +1,36 @@
+.doc-pdf-embed {
+    box-sizing:border-box;
+
+    &.align-center {
+        text-align: center;
+    }
+
+    &.align-right {
+        text-align: right;
+    }
+
+    :not(.wp-element-button) {
+        font-size: .8em;
+    }
+}
+
+.doc-pdf-embed__embed {
+    margin-bottom: 1em;
+}
+
+:where(.doc-pdf-embed) {
+    margin-bottom: 1.5em;
+}
+
+:where(.doc-pdf-embed__button) {
+    border-radius: 2em;
+    display: inline-block;
+    padding: .5em 1em;
+}
+
+:where(.doc-pdf-embed__button):is(a):active, :where(.doc-pdf-embed__button):is(a):focus, :where(.doc-pdf-embed__button):is(a):hover, :where(.doc-pdf-embed__button):is(a):visited {
+    box-shadow: none;
+    color: #FFF;
+    opacity: .85;
+    text-decoration: none;
+}

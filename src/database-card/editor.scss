@@ -1,0 +1,15 @@
+.wp-block-database-cpt-database-card {
+	position: relative;
+}
+
+.wp-block-database-cpt-database-card.is-selected {
+	outline: 2px dashed #007cba;
+}
+
+.wp-block-database-cpt-database-card .components-placeholder {
+	min-height: 200px;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border: 1px dashed #ccc;
+	border-radius: 6px;
+}

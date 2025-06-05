@@ -1,0 +1,15 @@
+.wp-block-term-cpt-term-list {
+	position: relative;
+}
+
+.wp-block-term-cpt-term-list.is-selected {
+	outline: 2px dashed #007cba;
+}
+
+.wp-block-term-cpt-term-list .components-placeholder {
+	min-height: 200px;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border: 1px dashed #ccc;
+	border-radius: 6px;
+}

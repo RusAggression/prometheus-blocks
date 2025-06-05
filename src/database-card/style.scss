@@ -1,0 +1,93 @@
+.wp-block-database-cpt-database-card {
+	margin-bottom: 20px;
+}
+
+.database-cards-grid > li {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	margin-block-start: 0;
+}
+
+.database-card:hover {
+	transform: translateY(-5px);
+}
+
+.database-card__link {
+	color: #333;
+	text-decoration: none;
+}
+
+.database-card__image {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+.database-card__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.database-card__link:hover {
+	color: #0073aa;
+}
+
+.database-card__title {
+	margin: 1rem;
+	font-size: 1.25rem;
+	line-height: 1.4;
+}
+
+.database-card__description {
+	margin: 0 1rem 1rem;
+	color: #666;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+.database-cards-grid {
+	display: grid;
+	gap: 2rem;
+	margin: 2rem 0;
+}
+
+.database-cards-grid.columns-1 {
+	grid-template-columns: 1fr;
+}
+
+.database-cards-grid.columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.database-cards-grid.columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.database-cards-grid.columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+	.database-cards-grid.columns-4 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.database-cards-grid.columns-3,
+	.database-cards-grid.columns-4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 480px) {
+	.database-cards-grid.columns-2,
+	.database-cards-grid.columns-3,
+	.database-cards-grid.columns-4 {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,22 @@
+.document-card {
+	opacity: .75;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+:where(.document-card) {
+	padding: .75em;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+.document-card__title {
+	margin: 0 0 .5em;
+	font-size: 1.25em;
+}
+
+:where(.document-card__title) {
+	font-weight: 600;
+}

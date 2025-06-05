@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "prometheus/database-card",
+  "title": "Database Card Block",
+  "category": "widgets",
+  "icon": "database",
+  "description": "Display a database entry as a card.",
+  "supports": {
+    "html": false
+  },
+  "usesContext": [
+    "postId"
+  ],
+  "attributes": {},
+  "textdomain": "prom-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

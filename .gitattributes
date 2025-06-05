@@ -1,0 +1,11 @@
+/*.dist             export-ignore
+/*.stubs            export-ignore
+/.*                 export-ignore
+/composer.lock      export-ignore
+/package.json       export-ignore
+/package-lock.json  export-ignore
+/tsconfig.json      export-ignore
+/lang/*.po*         export-ignore
+/lang/Makefile      export-ignore
+/tests/             export-ignore
+/src/               export-ignore
