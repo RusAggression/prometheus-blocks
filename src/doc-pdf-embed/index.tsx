@@ -6,6 +6,8 @@ import metadata from './block.json';
 import './style.scss';
 
 registerBlockType< DocPdfEmbedAttributes >(
-	metadata as BlockConfiguration< DocPdfEmbedAttributes >, {
-	edit: Edit,
-} );
+	metadata as BlockConfiguration< DocPdfEmbedAttributes >,
+	{
+		edit: Edit,
+	}
+);

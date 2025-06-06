@@ -6,6 +6,8 @@ import metadata from './block.json';
 import './style.scss';
 
 registerBlockType< DocumentCardAttributes >(
-	metadata as BlockConfiguration< DocumentCardAttributes >, {
-	edit: Edit,
-} );
+	metadata as BlockConfiguration< DocumentCardAttributes >,
+	{
+		edit: Edit,
+	}
+);
