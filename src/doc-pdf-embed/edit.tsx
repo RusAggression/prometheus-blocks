@@ -11,15 +11,15 @@ export function Edit( {
 	const { downloadLabel, previewHeight } = attributes;
 	const blockProps = useBlockProps( { className: 'doc-pdf-embed' } );
 
-	const onDownloadLabelChange = ( value: string ) => setAttributes( { downloadLabel: value } );
-	const onPreviewHeightChange = ( value: string ) => setAttributes( { previewHeight: parseInt( value, 10 ) } );
+	const onDownloadLabelChange = ( value: string ) =>
+		setAttributes( { downloadLabel: value } );
+	const onPreviewHeightChange = ( value: string ) =>
+		setAttributes( { previewHeight: parseInt( value, 10 ) } );
 
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody
-					title={ __( 'Settings', 'prom-blocks' ) }
-				>
+				<PanelBody title={ __( 'Settings', 'prom-blocks' ) }>
 					<TextControl
 						label={ __( 'Download label', 'prom-blocks' ) }
 						value={ downloadLabel }
@@ -27,7 +27,7 @@ export function Edit( {
 					/>
 					<TextControl
 						label={ __( 'Preview height', 'prom-blocks' ) }
-						type='number'
+						type="number"
 						value={ previewHeight }
 						min={ 100 }
 						onChange={ onPreviewHeightChange }
@@ -35,7 +35,10 @@ export function Edit( {
 				</PanelBody>
 			</InspectorControls>
 			<div { ...blockProps }>
-				{ __( 'Attached document will be displayed here if available.', 'prom-blocks' ) }
+				{ __(
+					'Attached document will be displayed here if available.',
+					'prom-blocks'
+				) }
 			</div>
 		</>
 	);

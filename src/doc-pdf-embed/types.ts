@@ -1,4 +1,4 @@
 export interface DocPdfEmbedAttributes {
-    downloadLabel: string;
-    previewHeight: number;
+	downloadLabel: string;
+	previewHeight: number;
 }

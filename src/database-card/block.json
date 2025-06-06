@@ -9,9 +9,7 @@
 	"supports": {
 		"html": false
 	},
-	"usesContext": [
-		"postId"
-	],
+	"usesContext": [ "postId" ],
 	"attributes": {},
 	"textdomain": "prom-blocks",
 	"editorScript": "file:./index.js",
