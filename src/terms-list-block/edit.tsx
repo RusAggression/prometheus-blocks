@@ -1,6 +1,5 @@
 import { __ } from '@wordpress/i18n';
 import { Fragment } from '@wordpress/element';
-import type { BlockEditProps } from '@wordpress/blocks';
 import { RichText, useBlockProps } from '@wordpress/block-editor';
 import { useSelect } from '@wordpress/data';
 import { decodeEntities } from '@wordpress/html-entities';
@@ -47,7 +46,7 @@ export function Edit() {
 	if ( ! terms ) {
 		return (
 			<div { ...blockProps }>
-				<p>{ __( 'Loading terms...', 'prom-blocks' ) }</p>
+				<p>{ __( 'Loading terms…', 'prom-blocks' ) }</p>
 			</div>
 		);
 	}

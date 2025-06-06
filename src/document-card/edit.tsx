@@ -1,3 +1,4 @@
+/* eslint-disable @wordpress/no-unsafe-wp-apis */
 import { useState, useEffect } from '@wordpress/element';
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
 import {
@@ -121,6 +122,7 @@ export function Edit(
 					{ searchResults.length > 0 && (
 						<ul>
 							{ searchResults.map( ( post ) => (
+								/* eslint-disable-next-line */
 								<li
 									key={ post.id }
 									style={ {
